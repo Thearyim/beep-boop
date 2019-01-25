@@ -20,7 +20,6 @@
 | 5            | 5 -> "Beep!", "Boop!", 2, "I'm Sorry...", 4, 5     |
 
 ## Technologies Used
-
 * _HTML_
 * _CSS_
 * _ATOM_

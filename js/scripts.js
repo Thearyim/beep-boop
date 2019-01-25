@@ -1,9 +1,35 @@
+// function convertNumberToArray(inputNumber) {
+//   var numberArray = [];
+//   //creating an array containing 0 through to N where N is only known at runtime
+//  for (var i = 0; i <= inputNumber; i++)
+//   numberArray.push(i);
+// }
+
+function toRange(inputNumber) {
+  var range = [];
+  for (var num = 0; num <= inputNumber; num++) {
+    range += num;
+  }
+
+  return range;
+}
 $(document).ready(function() {
   $("form#beepBoopForm").submit(function(event) {
     event.preventDefault();
     var inputNumber = $("#userInput").val();
-    Array.apply(null, {length: inputNumber}).map(Number.call, Number)
-    alert();
+
+     var numberRangeArray = [];
+      inputNumber.toRange(function(inputNumber)) {
+        numberRangeArray();
+      }
+      
+    // var inputNumberArray = [];
+    // for (var i = 0; i <= N; i++) {
+    //   inputNumberArray.push(i);
+
+
+    //Array.apply(null, {length: inputNumber}).map(Number.call, Number)
+
   });
 });
 

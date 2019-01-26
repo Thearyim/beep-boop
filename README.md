@@ -10,15 +10,17 @@
 * _Numbers that contain a 0 are replaced (all digits) with "Beep!"_
 * _Numbers that contain a 1 are replaced (all digits) with "Boop!"_
 * _Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
+
 **_These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."_**
 
-| Example Input| Example Output                                     |
-| :----------- | :------------------------------------------------- |
-| 0            | 0 -> "Beep!"                                       |
-| 1            | 1 -> "Boop!"                                       |
-| 3            | 3 -> "Im sorry, Dave. I'm afraid I can't do that." |
-| 4            | 4 -> "Beep!", "Boop!", 2, "I'm Sorry...", 4        |
-| 5            | 5 -> "Beep!", "Boop!", 2, "I'm Sorry...", 4, 5     |
+| Example Input| Example Output                                      |
+| :----------- | :-------------------------------------------------- |
+| 0            | 0  -> "Beep!"                                       |
+| 1            | 1  -> "Boop!"                                       |
+| 3            | 3  -> "Im sorry, Dave. I'm afraid I can't do that." |
+| 4            | 4  -> "Beep!", "Boop!", 2, "I'm Sorry...", 4        |
+| 5            | 5  -> "Beep!", "Boop!", 2, "I'm Sorry...", 4, 5     |
+| 10           | 10 -> "Beep!", "Boop!", 2, "I'm Sorry...", 4, 5, "I'm sorry...", 7, 8, "I'm sorry...", "Boop!" |
 
 ## Technologies Used
 * _HTML_

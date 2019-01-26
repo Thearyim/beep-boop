@@ -1,3 +1,7 @@
+var formElement;
+var resultContainerElement;
+var refreshButton;
+
 function getRange(number) {
   var range = [];
   for (var num = 0; num <= number; num++) {
@@ -54,21 +58,31 @@ function beepBoopMachine(inputNumber) {
   return machineOutput;
 }
 
-$(document).ready(function() {
-  $("form#beepBoopForm").submit(function(event) {
-    event.preventDefault();
-    var inputNumber = $("#userInput").val();
-    var result = beepBoopMachine(inputNumber);
-    $("#beepBoopResult").text(result);
-    $("form#beepBoopForm").hide();
-    $("#result").show();
+function showResults() {
+  var inputNumber = $("#userInput").val();
+  var result = beepBoopMachine(inputNumber);
+  $("#beepBoopResult").text(result);
+  formElement.hide();
+  resultContainerElement.show();
+}
+
+function initializePage() {
+  formElement = $("form#beepBoopForm");
+  resultContainerElement =$("#result");
+  refreshButton = $("button#refreshPage");
+
+  resultContainerElement.hide();
+  refreshButton.click(function(event) {
+    location.reload();
   });
-});
+}
+
+$(document).ready(initializePage);
 
 $(document).ready(function() {
-  $("#result").hide();
-    $("button#refreshPage").click(function() {
-      location.reload();
+  formElement.submit(function(event) {
+    event.preventDefault();
+    showResults();
   });
 });
 

@@ -85,7 +85,3 @@ $(document).ready(function() {
     showResults();
   });
 });
-
-//1. get inputNumber from userInput
-//2. convert to array
-//3. loop through the array and output a rang of numbers from 0 to the user inputted.

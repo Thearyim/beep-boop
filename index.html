@@ -9,17 +9,45 @@
   </head>
   <body>
     <div class="container">
-      <h1>Beep! Boop!</h1>
-      <form id="beepBoopForm">
-        <div class="form-group">
-          <label for="userInput">Pelase enter any number here:</label><br/>
-          <input id="userInput" name="userInput" class="form-control" type="text" value="">
+      <div id="signatureContainer">
+        <img id="signatureImage" src="img/Signature3.png" alt="Author's Signature/Watermark" />
+      </div>
+      <div id="contentContainer">
+        <div id="projectName">Beep! Boop!</div>
+        <div id="projectDescription">
+          <p>
+            This web application/project takes a number from a user and returns a range of numbers from 0 to the user inputted
+            number with the following exceptions:
+            <ul>
+              <li>Numbers that contain a 0 are replaced (all digits) with "Beep!"</li>
+              <li>Numbers that contain a 1 are replaced (all digits) with "Boop!"</li>
+              <li>Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."</li>
+            </ul>
+          </p>
+          <p>
+            These exceptions are written from least to most important. The first exception should apply unless the second
+            exception does, and the same with the second and third. So, for example, the number 10 would be replaced with
+            "Boop!", and the number 30 would be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+          </p>
+          <p>
+            Also a user should be able to enter a new number and see new results over and over again.
+            Example: If a user inputs a 5, the program should display a list of values: "Beep!", "Boop!", 2, "I'm Sorry...",
+            4, 5
+          </p>
         </div>
-        <button type="submit" name="button">submit</button>
-      </form>
-      <div id="result">
-        <p id="beepBoopResult"></p> 
-        <button id="refreshPage" type="button" class="btn btn-success">Go Back</button>
+        <form id="beepBoopForm">
+          <div class="sectionLabel">Test it out!</div>
+          <div class="form-group">
+            <label for="userInput">Enter a Valid Number:</label><br/>
+            <input id="userInput" name="userInput" class="form-control" type="text" value="">
+          </div>
+          <button type="submit" name="button" class="btn btn-success">submit</button>
+        </form>
+        <div id="result">
+          <div class="sectionLabel">The Machine Says:</div>
+          <p id="beepBoopResult"></p>
+          <button id="refreshPage" type="button" class="btn btn-success">Go Back</button>
+        </div>
       </div>
     </div>
   </body>

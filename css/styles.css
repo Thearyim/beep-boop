@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+  padding: 5px;
+  color: #000099;
+  background-image: linear-gradient(to right, rgba(180, 180, 200, 0.9), white);
+  background-repeat: repeat;
+  font-family: consolas;
+  font-size: 12pt;
+  text-align: justify;
+}
+
+label {
+  color: black;
+  font-weight: 400;
+}
+
+.container {
+  height: 100%;
+}
+
+.sectionLabel {
+  color: black;
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+#beepBoopResult {
+  font-size: 14pt;
+  color: #007700;
+  padding: 30px 10px 30px 10px;
+  border: 1px dotted #AAAAAA;
+  border-radius: 5px;
+}
+
+#projectName {
+  font-size: 28pt;
+  text-align: center;
+  color: #0000DD;
+}
+
+#projectDescription {
+  margin-bottom: 50px;
+}
+
+#signatureImage {
+  height: 165px;
+}
+
+#signatureContainer {
+  height: 130px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, rgba(50, 50, 60, 0.75), rgba(50, 50, 70, 0.5));
+  border-radius: 5px;
+  -webkit-box-shadow: 7px -7px 7px #999999;
+}
+
+#contentContainer {
+  min-height: calc(100% - 130px);
+  overflow: visible;
+  padding: 20px 100px 20px 100px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px -7px 7px #999999;
+}

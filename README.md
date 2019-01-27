@@ -1,11 +1,12 @@
-# _BeepBoop_
+# _Beep Boop_
 
-#### _BeepBoop 01/25/2019_
+#### _Beep Boop 01/25/2019_
 
-#### By _**Theary Im**_
+#### Author
+ _**Theary Im**_
+ _**thearyim@gmail.com**_
 
 ## Description
-
 **_This is an application that takes a number from a user and returns a range of numbers from 0 to the user inputted with the following exceptions:_**
 * _Numbers that contain a 0 are replaced (all digits) with "Beep!"_
 * _Numbers that contain a 1 are replaced (all digits) with "Boop!"_

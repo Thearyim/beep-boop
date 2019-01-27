@@ -1,9 +1,9 @@
 # _Beep Boop_
 
-#### _Beep Boop 01/25/2019_
+#### _01/25/2019_
 
-#### Author
- _**Theary Im**_
+## Author
+ _**Theary Im**_  
  _**thearyim@gmail.com**_
 
 ## Description
@@ -33,7 +33,7 @@
 * _Git_
 * _Bing_
 
-### License
+## License
 MIT
 **
 
